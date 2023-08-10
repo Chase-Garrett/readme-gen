@@ -114,7 +114,116 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseLink = "";
+  switch (license) {
+    case "Academic Free License v3.0":
+      licenseLink = "https://opensource.org/licenses/AFL-3.0";
+      break;
+    case "Apache license 2.0":
+      licenseLink = "https://opensource.org/licenses/Apache-2.0";
+      break;
+    case "Artistic license 2.0":
+      licenseLink ="";
+      break;
+    case "Boost Software License 1.0":
+      licenseLink ="";
+      break;
+    case "BSD 2-clause license":
+      licenseLink ="";
+      break;
+    case "BSD 3-clause license":
+      licenseLink ="";
+      break;
+    case "BSD 3-clause Clear license":
+      licenseLink ="";
+      break;
+    case "Creative Commons license family":
+      licenseLink ="";
+      break;
+    case "Creative Commons Zero v1.0 Universal":
+      licenseLink ="";
+      break;
+    case "Creative Commons Attribution 4.0":
+      licenseLink ="";
+      break;
+    case "Creative Commons Attribution Share Alike 4.0":
+      licenseLink ="";
+      break;
+    case "Do What The F*ck You Want To Public License":
+      licenseLink ="";
+      break;
+    case "Educational Community License v2.0":
+      licenseLink ="";
+      break;
+    case "Eclipse Public License 1.0":
+      licenseLink ="";
+      break;
+    case "Eclipse Public License 2.0":
+      licenseLink ="";
+      break;
+    case "European Union Public License 1.1":
+      licenseLink ="";
+      break;
+    case "GNU Affero General Public License v3.0":
+      licenseLink ="";
+      break;
+    case "GNU General Public License family":
+      licenseLink ="";
+      break;
+    case "GNU General Public License v2.0":
+      licenseLink ="";
+      break;
+    case "GNU General Public License v3.0":
+      licenseLink ="";
+      break;
+    case "GNU Lesser General Public License family":
+      licenseLink ="";
+      break;
+    case "GNU Lesser General Public License v2.1":
+      licenseLink ="";
+      break;
+    case "GNU Lesser General Public License v3.0":
+      licenseLink ="";
+      break;
+    case "ISC":
+      licenseLink ="";
+      break;
+    case "LaTeX Project Public License v1.3c":
+      licenseLink ="";
+      break;
+    case "Microsoft Public License":
+      licenseLink ="";
+      break;
+    case "MIT":
+      licenseLink = "https://opensource.org/licenses/MIT";
+      break;
+    case "Mozilla Public License 2.0":
+      licenseLink = "";
+      break;
+    case "Open Software License 3.0":
+      licenseLink = "";
+      break;
+    case "PostgreSQL License":
+      licenseLink = "";
+      break;
+    case "SIL Open Font License 1.1":
+      licenseLink = "";
+      break;
+    case "University of Illinois/NCSA Open Source License":
+      licenseLink = "";
+      break;
+    case "The Unlicense":
+      licenseLink = "";
+      break;
+    case "zLib License":
+      licenseLink = "";
+      break;
+    default:
+      licenseLink = "";
+  }
+  return licenseLink;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
