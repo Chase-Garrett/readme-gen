@@ -225,9 +225,117 @@ function renderLicenseLink(license) {
   return licenseLink;
 }
 
-// TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  let licenseSection = "";
+  switch (license) {
+    case "Academic Free License v3.0":
+      licenseSection = "This project is licensed under the Academic Free License v3.0 license.";
+      break;
+    case "Apache license 2.0":
+      licenseSection = "This project is licensed under the Apache license 2.0 license.";
+      break;
+    case "Artistic license 2.0":
+      licenseSection ="This project is licensed under the Artistic license 2.0 license.";
+      break;
+    case "Boost Software License 1.0":
+      licenseSection ="This project is licensed under the Boost Software License 1.0 license.";
+      break;
+    case "BSD 2-clause license":
+      licenseSection ="This project is licensed under the BSD 2-clause license license.";
+      break;
+    case "BSD 3-clause license":
+      licenseSection ="This project is licensed under the BSD 3-clause license license.";
+      break;
+    case "BSD 3-clause Clear license":
+      licenseSection ="This project is licensed under the BSD 3-clause Clear license license.";
+      break;
+    case "Creative Commons license family":
+      licenseSection ="This project is licensed under the Creative Commons license family license.";
+      break;
+    case "Creative Commons Zero v1.0 Universal":
+      licenseSection ="This project is licensed under the Creative Commons Zero v1.0 Universal license.";
+      break;
+    case "Creative Commons Attribution 4.0":
+      licenseSection ="This project is licensed under the Creative Commons Attribution 4.0 license.";
+      break;
+    case "Creative Commons Attribution Share Alike 4.0":
+      licenseSection ="This project is licensed under the Creative Commons Attribution Share Alike 4.0 license.";
+      break;
+    case "Do What The F*ck You Want To Public License":
+      licenseSection ="This project is licensed under the Do What The F*ck You Want To Public License license.";
+      break;
+    case "Educational Community License v2.0":
+      licenseSection ="This project is licensed under the Educational Community License v2.0 license.";
+      break;
+    case "Eclipse Public License 1.0":
+      licenseSection ="This project is licensed under the Eclipse Public License 1.0 license.";
+      break;
+    case "Eclipse Public License 2.0":
+      licenseSection ="This project is licensed under the Eclipse Public License 2.0 license.";
+      break;
+    case "European Union Public License 1.1":
+      licenseSection ="This project is licensed under the European Union Public License 1.1 license.";
+      break;
+    case "GNU Affero General Public License v3.0":
+      licenseSection ="This project is licensed under the GNU Affero General Public License v3.0 license.";
+      break;
+    case "GNU General Public License family":
+      licenseSection ="This project is licensed under the GNU General Public License family license.";
+      break;
+    case "GNU General Public License v2.0":
+      licenseSection ="This project is licensed under the GNU General Public License v2.0 license.";
+      break;
+    case "GNU General Public License v3.0":
+      licenseSection ="This project is licensed under the GNU General Public License v3.0 license.";
+      break;
+    case "GNU Lesser General Public License family":
+      licenseSection ="This project is licensed under the GNU Lesser General Public License family license.";
+      break;
+    case "GNU Lesser General Public License v2.1":
+      licenseSection ="This project is licensed under the GNU Lesser General Public License v2.1 license.";
+      break;
+    case "GNU Lesser General Public License v3.0":
+      licenseSection ="This project is licensed under the GNU Lesser General Public License v3.0 license.";
+      break;
+    case "ISC":
+      licenseSection ="This project is licensed under the ISC license.";
+      break;
+    case "LaTeX Project Public License v1.3c":
+      licenseSection ="This project is licensed under the LaTeX Project Public License v1.3c license.";
+      break;
+    case "Microsoft Public License":
+      licenseSection ="This project is licensed under the Microsoft Public License license.";
+      break;
+    case "MIT":
+      licenseSection = "This project is licensed under the MIT license.";
+      break;
+    case "Mozilla Public License 2.0":
+      licenseSection = "This project is licensed under the Mozilla Public License 2.0 license.";
+      break;
+    case "Open Software License 3.0":
+      licenseSection = "This project is licensed under the Open Software License 3.0 license.";
+      break;
+    case "PostgreSQL License":
+      licenseSection = "This project is licensed under the PostgreSQL License license.";
+      break;
+    case "SIL Open Font License 1.1":
+      licenseSection = "This project is licensed under the SIL Open Font License 1.1 license.";
+      break;
+    case "University of Illinois/NCSA Open Source License":
+      licenseSection = "This project is licensed under the University of Illinois/NCSA Open Source License license.";
+      break;
+    case "The Unlicense":
+      licenseSection = "This project is licensed under the The Unlicense license.";
+      break;
+    case "zLib License":
+      licenseSection = "This project is licensed under the zLib License.";
+      break;
+    default:
+      licenseSection = "";
+  }
+  return licenseSection;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
