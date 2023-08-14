@@ -34,6 +34,12 @@ const questions = [
         default: "N/A"
     },
     {
+        type: "input",
+        name: "tests",
+        message: "Enter test instructions",
+        default: "N/A"
+    },
+    {
         type: "list",
         name: "license",
         message: "Choose a license for your project",
